@@ -1,0 +1,9 @@
+venv/
+.env
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+chat_origin.py
+llm_origin.py
+llm_origin_study.py
