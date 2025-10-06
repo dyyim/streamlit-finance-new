@@ -24,7 +24,7 @@ def get_session_history(session_id: str) -> BaseChatMessageHistory:
 
 def get_retriever():
     embedding = OpenAIEmbeddings(model = 'text-embedding-3-large') # 임베딩 모델을 large로 바꿔주기
-    index_name = 'finance-index'
+    index_name = 'finance-new-index'
     database = PineconeVectorStore.from_existing_index(index_name=index_name, embedding=embedding)
     retriever = database.as_retriever(search_kwargs={"k": 2}) 
     return retriever
